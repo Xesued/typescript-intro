@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outDir": "./build",
+        "target": "ES5"
+    },
+
+    "files":[
+        "externalExample.ts",
+        "internalExample.ts"
+     ]
+}

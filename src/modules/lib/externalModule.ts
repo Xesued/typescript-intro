@@ -1,11 +1,11 @@
+// This is a small ES6 style method of exporting (exposing) modules.
 
-// Notice that for "external" modules, we don't need to wrap the file in a 
-// 'module'.  Externals are treated simular to commonjs requires where they are 
-// execulted within their own context (closure???).
-export function message () {
-	alert('Hello World');
+// alertMessage will not be exposted to the outside world.
+function alertMessage(msg:string ){
+	alert(msg);
 }
 
-
-// This is the perfered method for everything we will be doing, tooling supports
-// this method much better (Webpack loaders)
+// Use 'export' to allow this method to be used when imported
+export function message (message:string) {
+	alertMessage(message);
+}

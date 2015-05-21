@@ -7,4 +7,4 @@
 
 
 // Using Messages from out internal modules.
-Messages.message();
+Messages.message('Hi internal');

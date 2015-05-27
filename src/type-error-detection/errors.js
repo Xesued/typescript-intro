@@ -1,6 +1,4 @@
-
 var TITLES = {mytitles:123};
-
 class IHaveErrors{
 	name;
 	title;
@@ -12,12 +10,12 @@ class IHaveErrors{
 		this.title = title;
 		this.props = props;
 	}
-
+	
 	consoleName () {
-		console.log(this.name + ' ' + this.tilte);
+		console.log(this.name + ' ' + this.tilte.length);
 		console.log(this.props.length);
 	}
-
+	
 	displayName () {
 		document.querySelector('#name').addEventListener('click', function(el) {
 			el.innerHTML = this.name;

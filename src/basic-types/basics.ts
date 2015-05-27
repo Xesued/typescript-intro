@@ -17,8 +17,12 @@ let canIHoldEmpty:boolean = '';
 //---------------------
 // NUMBER
 //---------------------
-let age:number = 123;
+let age = 123;
 let infinity:number = Number.POSITIVE_INFINITY;
+
+// type inferance
+let myage:number;
+myage = age;
 
 
 //---------------------
@@ -32,8 +36,9 @@ let myName:string = 'Jimmy';
 //---------------------
 let grades:number[] = [1,2,3,4];
 let ages:Array<number> = [1,2,3,44];
-let badAges:Array<number> = [1,3,2,'4'];
+ages.push(43);
 
+let badAges:Array<number> = [1,3,2,'5'];
 let myList:any[] = [1,'',{'hi':23}];
 
 //---------------------
@@ -42,6 +47,7 @@ let myList:any[] = [1,'',{'hi':23}];
 // By default, enums are 0 indexed
 enum LETTER_GRADES {A, B, C, D, F};
 let myGrade:LETTER_GRADES = LETTER_GRADES.A; // = 0
+
 
 // Or, you can set the startin value
 enum YEARS {FIRST = 2011, SECOND, THIRD};

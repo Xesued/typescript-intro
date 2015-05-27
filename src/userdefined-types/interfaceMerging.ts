@@ -7,6 +7,9 @@ interface Shape {
 	color: string;
 }
 
+interface BetterShape extends Shape{
+	color: string;
+}
 
 
 // Circle now has to implement all of the parts of the merged

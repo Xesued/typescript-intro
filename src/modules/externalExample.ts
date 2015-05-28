@@ -1,9 +1,8 @@
-
-// This is the syntax for external modules.  This is the perfered method (outside of es6 modules)
+// We can use standard ES6 imports
 import {message} from './lib/externalModule';
-message();
+message('Hi there ES6');
 
 
-// The Typescript method (non ES6)
+// Or, Typescript has it's own method of importing...
 import messages = require('./lib/externalModule');
-messages.message();
+messages.message('Hi there Typescript');

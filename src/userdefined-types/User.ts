@@ -6,9 +6,6 @@ class Car {
 	make:string;
 	model:string;
 	
-	// Privates are typescript only. If we build .js that is consumed
-	// by .js, you could access this proerty since Javascript doesn't
-	// have a notion of private.
 	private engine:any;
 	
 	constructor() {
@@ -16,12 +13,12 @@ class Car {
 		this.model = '3';
 		this.engine = '2.5l';
 	}
+	
+	// TODO: Create methods!
 }
 
 let myCar:Car = new Car();
 
-myCar.make = '3';
-myCar.model = 'Mazda';
-
-// myCar.engine = 4;
+// TODO: Set attributes, try both public and private.  Add new 
+// properties, or a new class
 

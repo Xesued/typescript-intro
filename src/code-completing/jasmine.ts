@@ -6,9 +6,8 @@ describe('test 1', function () {
 	});
 	
 	let myObj = {name:"test object", fun:function(){}};
-	
-	// TODO:
-	// Create an "it" testing the myObj properties are set.
-	
+	it('should have properties', function() {
+		// TODO: Write some expect statements to test the properies on myObj.
+	});
 	
 });

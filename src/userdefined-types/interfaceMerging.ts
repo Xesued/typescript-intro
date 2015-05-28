@@ -19,5 +19,7 @@ class Circle implements Shape {
 	color:string;	// MUST implement
 }
 
+
+
 // This is a very basic example, there are more details here:
 // http://www.typescriptlang.org/Handbook#declaration-merging

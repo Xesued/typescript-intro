@@ -1,3 +1,5 @@
+.idea/
+.settings/
 build/
 npm-debug.log
 *.js

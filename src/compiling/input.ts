@@ -1,1 +1,1 @@
-// TODO: insert some javascript
+// TODO: insert some plain javascript (ES5 or ES6)

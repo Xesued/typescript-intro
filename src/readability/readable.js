@@ -2,7 +2,7 @@ class TypeAhead {
 	
 	element;
 	header;
-	items;
+	users;
 	
 	constructor (element, header, items){
 		this.element = element;

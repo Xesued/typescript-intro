@@ -1,19 +1,19 @@
-interface User {save:Function};
+interface Item {save:Function};
 interface Promise {};
 
 class TSTypeAhead {
 	
 	element: HTMLElement;
 	header: string;
-	items: Array<User>;
+	users: Array<Item>;
 	
-	constructor (element:HTMLElement, header:string, items: Array<User>) {
+	constructor (element:HTMLElement, header:string, users: Array<Item>) {
 		this.element = element;
 		this.header = header;
-		this.items = items;
+		this.users = users;
 	}
 	
-	save (item:User) : Promise {
+	save (item:Item) : Promise {
 		return item.save();
 	}
 }

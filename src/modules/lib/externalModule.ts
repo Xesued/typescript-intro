@@ -1,6 +1,5 @@
-// This is a small ES6 style method of exporting (exposing) modules.
 
-// alertMessage will not be exposted to the outside world.
+// alertMessage will not be exposed to the outside world.
 function alertMessage(msg:string ){
 	alert(msg);
 }

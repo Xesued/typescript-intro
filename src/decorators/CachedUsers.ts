@@ -7,12 +7,10 @@ class UserInfo {
     this.getInfo();
   }
   
+  @cache(5000)
   getInfo () {
+    console.log('...returning Info');
     return {id: 5, firstName:'nathan', lastName:'norton'};
-  }
-  
-  getName () {
-    return 'Nathan'
   }
   
   getSomething(){
@@ -22,6 +20,7 @@ class UserInfo {
 
 var myUser = new UserInfo();
 setInterval( () => {
-  // TODO: Call methods on myUser
+  console.log('-----------------');
+  myUser.getInfo();
   
-}, 2000);
+}, 1000);

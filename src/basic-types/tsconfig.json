@@ -5,7 +5,11 @@
         "module": "commonjs",
         "outDir": "./build"
     },
+    
     "files": [
-        "./app.ts"
+        "./arrays.ts",
+        "./basics",
+        "./enums.ts",
+        "./functions.ts"
     ]
 }

@@ -10,15 +10,13 @@ export function cache(time:number){
         let currentResults:any = null;
         
         function cacheResults (...args:any[]) {
-            console.log('--------CACHE--------');
             let currentTime:number = new Date().getTime();
             if(lastUpdated + time < currentTime){
-                console.log('Using Cached version:');
                 currentResults = originalFunction.apply(this, args);
                 lastUpdated = currentTime;
+            } else {
+                console.log('Using Cached version');
             }
-            console.log('Returned: ');
-            console.log(currentResults);
             return currentResults;
         }
         
@@ -35,7 +33,6 @@ export function throttle(time:number){
         let lastUpdated:number = 0;
         
         function throttleResults (...args:any[]) {
-            console.log('-------THROTTLE--------');
             let currentTime:number = new Date().getTime();
             if(lastUpdated + time < currentTime){
                 console.log('Calling Function:');

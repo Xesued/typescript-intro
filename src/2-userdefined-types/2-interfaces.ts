@@ -5,7 +5,7 @@ interface Shape {
 	area: number;
 }
 
-class Circle implements Shape {
+class Circle  {
 	area:number;
 	radius:number;
 }

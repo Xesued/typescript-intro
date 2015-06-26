@@ -7,7 +7,7 @@ class UserInfo {
     this.getInfo();
   }
   
-  @cache(5000)
+  @cache(5000) // Using the decorator to cache the results of this method for 5 seconds
   getInfo () {
     console.log('...returning Info');
     return {id: 5, firstName:'nathan', lastName:'norton'};
@@ -22,5 +22,4 @@ var myUser = new UserInfo();
 setInterval( () => {
   console.log('-----------------');
   myUser.getInfo();
-  
 }, 1000);
